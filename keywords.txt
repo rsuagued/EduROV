@@ -1,0 +1,35 @@
+#######################################
+# Síntesis de color para librería EduROVs
+#######################################
+
+#######################################
+# Tipo de datos (KEYWORD1)
+#######################################
+Edurov		KEYWORD1
+
+
+#######################################
+# Métodos y funciones (KEYWORD2)
+#######################################
+
+darPinesMotor		KEYWORD2
+paraMotores		KEYWORD2
+paraMotor               KEYWORD2
+avanza			KEYWORD2
+retrocede		KEYWORD2
+giraDerecha		KEYWORD2
+giraIzquierda		KEYWORD2
+sumerge			KEYWORD2
+emerge			KEYWORD2
+
+
+#######################################
+# Constantes (LITERAL1)
+#######################################
+
+MOTOR_DERECHO LITERAL1
+MOTOR_IZQUIERDO LITERAL1
+MOTOR_CENTRAL LITERAL1
+PUENTE_EDUSHIELD_CANARIAS LITERAL1
+PUENTE_LM298N LITERAL1
+PUENTE_LM298N_HEX LITERAL1
