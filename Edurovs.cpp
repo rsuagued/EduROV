@@ -30,12 +30,12 @@ EduRov::EduRov(){
 EduRov::EduRov(uint8_t puente){
   puenteH=puente;
   if (puenteH==PUENTE_LM298N){
-    pinMotor[MOTOR_IZQUIERDO][pin1]=4;
-    pinMotor[MOTOR_IZQUIERDO][pin2]=5;
-    pinMotor[MOTOR_DERECHO][pin1]=7;
-    pinMotor[MOTOR_DERECHO][pin2]=6;
-    pinMotor[MOTOR_CENTRAL][pin1]=12;
-    pinMotor[MOTOR_CENTRAL][pin2]=11;
+    pinMotor[MOTOR_IZQUIERDO][pin1]=5;
+    pinMotor[MOTOR_IZQUIERDO][pin2]=4;
+    pinMotor[MOTOR_DERECHO][pin1]=6;
+    pinMotor[MOTOR_DERECHO][pin2]=7;
+    pinMotor[MOTOR_CENTRAL][pin1]=11;
+    pinMotor[MOTOR_CENTRAL][pin2]=12;
     //En este tipo de puente en H el enable siempre está activo
     pinMode(pinMotor[MOTOR_CENTRAL][pin1],OUTPUT);
 	pinMode(pinMotor[MOTOR_CENTRAL][pin2],OUTPUT);
@@ -53,12 +53,12 @@ EduRov::EduRov(uint8_t puente){
     digitalWrite(pinMotor[MOTOR_CENTRAL][pin2],LOW);
     }
  if (puenteH==PUENTE_LM298N_HEX){
-    pinMotor[MOTOR_IZQUIERDO][pin1]=4;
-    pinMotor[MOTOR_IZQUIERDO][pin2]=3;
-    pinMotor[MOTOR_DERECHO][pin1]=7;
-    pinMotor[MOTOR_DERECHO][pin2]=8;
-    pinMotor[MOTOR_CENTRAL][pin1]=12;
-    pinMotor[MOTOR_CENTRAL][pin2]=13;
+    pinMotor[MOTOR_IZQUIERDO][pin1]=3;
+    pinMotor[MOTOR_IZQUIERDO][pin2]=4;
+    pinMotor[MOTOR_DERECHO][pin1]=8;
+    pinMotor[MOTOR_DERECHO][pin2]=7;
+    pinMotor[MOTOR_CENTRAL][pin1]=13;
+    pinMotor[MOTOR_CENTRAL][pin2]=12;
     pinMotor[MOTOR_IZQUIERDO][pinEN]=5;
     pinMotor[MOTOR_DERECHO][pinEN]=6;
     pinMotor[MOTOR_CENTRAL][pinEN]=11;
@@ -114,18 +114,18 @@ EduRov::EduRov(uint8_t puente, uint8_t nMotores){
     }
 	 if (puenteH==PUENTE_LM298N){
 		 if (motores>2){
-			pinMotor[MOTOR_CENTRAL][pin1]=12;
-			pinMotor[MOTOR_CENTRAL][pin2]=11;
+			pinMotor[MOTOR_CENTRAL][pin1]=11;
+			pinMotor[MOTOR_CENTRAL][pin2]=12;
 			pinMode(pinMotor[MOTOR_CENTRAL][pin1],OUTPUT);
 			pinMode(pinMotor[MOTOR_CENTRAL][pin2],OUTPUT);
 			//Para parar el motor tengo que poner los dos pines a 0
 			digitalWrite(pinMotor[MOTOR_CENTRAL][pin1],LOW);
 			digitalWrite(pinMotor[MOTOR_CENTRAL][pin2],LOW);
 		 }
-		pinMotor[MOTOR_IZQUIERDO][pin1]=4;
-		pinMotor[MOTOR_IZQUIERDO][pin2]=5;
-		pinMotor[MOTOR_DERECHO][pin1]=7;
-		pinMotor[MOTOR_DERECHO][pin2]=6;
+		pinMotor[MOTOR_IZQUIERDO][pin1]=5;
+		pinMotor[MOTOR_IZQUIERDO][pin2]=4;
+		pinMotor[MOTOR_DERECHO][pin1]=6;
+		pinMotor[MOTOR_DERECHO][pin2]=7;
 	    //En este tipo de puente en H el enable siempre está activo
 		pinMode(pinMotor[MOTOR_IZQUIERDO][pin1],OUTPUT);
 		pinMode(pinMotor[MOTOR_IZQUIERDO][pin2],OUTPUT);
@@ -140,8 +140,8 @@ EduRov::EduRov(uint8_t puente, uint8_t nMotores){
     }
 	if (puenteH==PUENTE_LM298N_HEX){
 		 if (motores>2){
-			pinMotor[MOTOR_CENTRAL][pin1]=12;
-			pinMotor[MOTOR_CENTRAL][pin2]=13;
+			pinMotor[MOTOR_CENTRAL][pin1]=13;
+			pinMotor[MOTOR_CENTRAL][pin2]=12;
 			pinMotor[MOTOR_CENTRAL][pinEN]=11;
 			pinMode(pinMotor[MOTOR_CENTRAL][pin1],OUTPUT);
 			pinMode(pinMotor[MOTOR_CENTRAL][pin2],OUTPUT);
@@ -149,10 +149,10 @@ EduRov::EduRov(uint8_t puente, uint8_t nMotores){
 			//Para parar el motor tengo que poner los dos pines a 0
 			digitalWrite(pinMotor[MOTOR_CENTRAL][pinEN],LOW);
 		 }
-		pinMotor[MOTOR_IZQUIERDO][pin1]=4;
-		pinMotor[MOTOR_IZQUIERDO][pin2]=3;
-		pinMotor[MOTOR_DERECHO][pin1]=7;
-		pinMotor[MOTOR_DERECHO][pin2]=8;
+		pinMotor[MOTOR_IZQUIERDO][pin1]=3;
+		pinMotor[MOTOR_IZQUIERDO][pin2]=4;
+		pinMotor[MOTOR_DERECHO][pin1]=8;
+		pinMotor[MOTOR_DERECHO][pin2]=7;
 		pinMotor[MOTOR_IZQUIERDO][pinEN]=5;
 		pinMotor[MOTOR_DERECHO][pinEN]=6;
 		pinMode(pinMotor[MOTOR_IZQUIERDO][pin1],OUTPUT);

@@ -35,8 +35,8 @@ private:
   uint8_t puenteH=PUENTE_EDUSHIELD_CANARIAS; //Tipo de puente 0=Puente EduShiel Canarias
   int pinMotor[3][3]={
 	{12,0,11},  //motor central
-	{7,0,5},  //motor izquierdo
-	{4,0,6}   //motor derecho
+	{7,0,5},    //motor izquierdo
+	{4,0,6}     //motor derecho
 		};
     uint8_t motores=3;
 };
